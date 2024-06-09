@@ -54,22 +54,22 @@ int main()
     }
 
     // Render the image
-    for (int y = 0; y < image_height; y++)
-    {
-        for (int x = 0; x < image_width; x++)
-        {
-            auto r = double(x) / image_width;
-            auto g = double(y) / image_height;
-            auto b = 0.2;
+    // for (int y = 0; y < image_height; y++)
+    // {
+    //     for (int x = 0; x < image_width; x++)
+    //     {
+    //         auto r = double(x) / image_width;
+    //         auto g = double(y) / image_height;
+    //         auto b = 0.2;
 
-            int ir = static_cast<int>(255.999 * r);
-            int ig = static_cast<int>(255.999 * g);
-            int ib = static_cast<int>(255.999 * b);
+    //         int ir = static_cast<int>(255.999 * r);
+    //         int ig = static_cast<int>(255.999 * g);
+    //         int ib = static_cast<int>(255.999 * b);
 
-            SDL_SetRenderDrawColor(renderer, ir, ig, ib, 255);
-            SDL_RenderDrawPoint(renderer, x, y);
-        }
-    }
+    //         SDL_SetRenderDrawColor(renderer, ir, ig, ib, 255);
+    //         SDL_RenderDrawPoint(renderer, x, y);
+    //     }
+    // }
 
     // Present the renderer
     SDL_RenderPresent(renderer);
