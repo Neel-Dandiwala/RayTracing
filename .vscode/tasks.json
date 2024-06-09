@@ -8,6 +8,11 @@
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
+                "-I",
+                "D:/Desktop/RayTracing/SDL2/x86_64-w64-mingw32/include",
+                "-L",
+                "D:/Desktop/RayTracing/SDL2/x86_64-w64-mingw32/lib",
+                "-lSDL2",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 ""
