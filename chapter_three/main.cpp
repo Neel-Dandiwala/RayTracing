@@ -12,7 +12,7 @@ vec3 color(const ray &r)
 
 void renderImage(SDL_Renderer *renderer, int width, int height)
 {
-    vec3 lower_left_corner(-2.0, -1.0, -1.0);
+    vec3 lower_left_corner(2.0, 1.0, -1.0);
     vec3 horizontal(4.0, 0.0, 0.0);
     vec3 vertical(0.0, 2.0, 0.0);
     vec3 origin(0.0, 0.0, 0.0);
